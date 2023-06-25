@@ -132,7 +132,7 @@ clock = pygame.time.Clock()
 running = True
 FPS = 60
 speed = 6
-angle_speed = 4
+angle_speed = 3
 player_car = PlayerCar(speed, angle_speed)
 points = np.array([0,0,0,0,0])
 
