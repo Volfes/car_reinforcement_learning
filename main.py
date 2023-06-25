@@ -130,8 +130,8 @@ screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption('Race')
 clock = pygame.time.Clock()
 running = True
-FPS = 30
-speed = 8
+FPS = 60
+speed = 6
 angle_speed = 4
 player_car = PlayerCar(speed, angle_speed)
 points = np.array([0,0,0,0,0])
