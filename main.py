@@ -83,6 +83,7 @@ def main():
             horizontal_vel = math.sin(radians) * self.vel
             self.y -= vertical_vel
             self.x -= horizontal_vel
+            return radians-(2*math.pi)*int(radians/(2*math.pi))
             # print(int(self.x), int(self.y))
         
         
@@ -93,7 +94,7 @@ def main():
             top_pixel = screen.get_at((int(self.x)+7, int(self.y)-8))
             left_pixel = screen.get_at((int(self.x)-7, int(self.y)+13))
             right_pixel = screen.get_at((int(self.x)+21, int(self.y)+13))
-            print(f'bottom: {bottom_pixel}, \n top: {top_pixel}, \n left: {left_pixel}, \n right: {right_pixel}')
+            print(f'bottom: {bottom_pixel}, \n top: {top_pixel}, \n left: {left_pixel}, \n right: {right_pixel} \n angle: {self.move()}')
 
 
         
